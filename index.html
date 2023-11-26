@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collaborative code editer</title>
+    <!-- css file Bootstrsap -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bondi.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <!-- Link scc file  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fonts link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="container">
+    <div class="content row gap-5 d-flex justify-content-around">
+        <div class="left col-md-5 col-11 p-0 m-0">
+            <div class="">
+                <label class="bg-black text-light"><i class='bx bxl-html5'></i> html</label>
+                <textarea id="htmlCode" onkeyup="run()"></textarea>
+            </div>
+
+            <div>
+                <label class="bg-black text-light"><i class='bx bxl-css3'></i> css</label>
+                <textarea id="cssCode" onkeyup="run()"></textarea>
+            </div>
+
+            <div>
+                <label class="bg-black text-light"><i class='bx bxl-javascript'></i> JavaScript</label>
+                <textarea id="jsCode" onkeyup="run()"></textarea>
+            </div>
+
+        </div>
+        <div class="right col-md-5 col-11 m-0 p-0">
+            <label class="bg-black text-light"><i class='bx bx-play'></i> Output</label>
+            <iframe class="output" id="output"></iframe>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
